@@ -58,10 +58,10 @@ header .navbar{
 }
 .title-about{
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 .subtitle-about{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -187,7 +187,7 @@ footer{
 
     /* Footer */
     footer{
-        height: 60vh;
+        height: 75vh;
         display: flex;
         flex-wrap: wrap;
     }
