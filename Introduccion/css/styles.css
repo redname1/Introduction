@@ -91,6 +91,55 @@ header .navbar{
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Navegation menu */
+
+.menu-navegation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 16vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.menu-navegation a{
+    color: black;
+    text-decoration: none;
+}
+.spread {
+    transform: translate(0);
+}
+.js{
+    cursor: pointer;
+}
+#hidde-home{
+    display: none;
+}
+
+/* Area */
+.areas{
+    padding-top: 10%;
+    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%);
+}
+.area-section{
+    justify-content: center;
+}
+.area-section h1{
+    text-align: center;
+    font-size: 24px;
+}
+
 /* Footer */
 
 footer{
@@ -118,13 +167,17 @@ footer{
     margin-top: 10%;
 }
 .bx-social{
-    color: black;
+    color: white;
     margin-right: 1%;
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: 2px 2px 7px 2px rgb(77, 75, 75);
 }
-
+.bx-social:hover{
+    color: purple;
+    background-color: #fff;
+}
+/* Responsive */
 @media (max-width:800px) {
     .intro{
         margin-top: 0;
@@ -145,10 +198,40 @@ footer{
         text-align: right;
     }
 
+    /* Navegation menu */
+    
+    .menu-navegation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        height: 100%;
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        transform: translate(110%);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+    .menu-navegation a{
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+    }
+    .spread {
+        transform: translate(0);
+    }
+    #hidde-home{
+        display: block;
+    }
+
     /* About */
 
     .about-me{
-        height: 150vh;
+        height: 140vh;
         flex-wrap: wrap;
     }
     .about-me-container{
@@ -185,6 +268,15 @@ footer{
         margin-top: 3%;
     }
 
+    /* Area */
+    .areas{
+        padding-top: 5%;
+        height: 190vh;
+    }
+    .areas-img{
+        margin-left: 5%;
+        width: 90%;
+    }
     /* Footer */
     footer{
         height: 75vh;
@@ -195,7 +287,7 @@ footer{
         float: none;
         right: 10px;
         width: 90%;
-        height: 40%;
+        height: 20%;
         display: flex;
         margin: auto;
     }
@@ -206,11 +298,5 @@ footer{
         margin-top: 35%;
         text-align: center;
         margin-left: 0;
-    }
-    .bx-social{
-        color: black;
-        border-radius: 50%;
-        border: 2px solid black;
-        box-shadow: 2px 2px 7px 2px rgb(77, 75, 75);
     }
 }
