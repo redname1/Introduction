@@ -43,7 +43,7 @@ header .navbar {
 /* Section 2 (about me) */
 
 .about-me {
-  height: 80vh;
+  height: 90vh;
   padding: 4%;
   display: flex;
   justify-content: space-between;
